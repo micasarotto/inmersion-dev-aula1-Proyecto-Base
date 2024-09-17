@@ -2,7 +2,7 @@ let cantidad = document.getElementById('cantidad');
 let boton = document.getElementById('generar');
 let contrasena = document.getElementById('contrasena');
 
-const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
+const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()';
 
 function generar() {
 
@@ -21,4 +21,8 @@ function generar() {
         password += caracterAleatorio;
     }
     contrasena.value= password;
+}
+
+function limpiar() {
+    contrasena.value = '';  // Limpia el campo de la contraseña
 }
